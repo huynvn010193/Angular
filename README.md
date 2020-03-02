@@ -1,6 +1,9 @@
 # Angular
 Create Component: ng g c my-component  --skipTests
 
+#Install boostrap 3: npm install bootstrap@3.3.7
+
+
 Cofig space boostrap: 
 So to summarize:
 In order to set angular compiler options in AOT compile (ng serve --aot, ng build --prod) you must alter the tsconfig.app.json to include:
@@ -15,3 +18,4 @@ platformBrowserDynamic().bootstrapModule(AppModule, {
 })
 .catch(err => console.log(err));
 To be consistent between JIT and AOT, you must alter both files!
+
