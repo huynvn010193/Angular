@@ -19,3 +19,9 @@ platformBrowserDynamic().bootstrapModule(AppModule, {
 .catch(err => console.log(err));
 To be consistent between JIT and AOT, you must alter both files!
 
+# Kiến thức : 
+  + encapsulation: ViewEncapsulation: 
+    - None: Sẽ bao componet này nữa => khi parent nào sử dụng sẽ bị thay đổi theo. => đưa style thành global
+    - Native: Sẽ không nhận từ parent lẫn global
+    - Emulated (default): nếu parent and global có thì sẽ nhận của global.
+
