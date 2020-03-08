@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'uca-app';
+
+  loadedFeature = 'recipe';
+
+  onNavigate(feature: string) {
+    console.log("feature App", feature);
+    this.loadedFeature = feature;
+  }
+
 }
