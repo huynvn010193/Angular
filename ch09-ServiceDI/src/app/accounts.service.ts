@@ -19,6 +19,6 @@ export class AccountService {
     }
 
     updateStatus(id: number, status: string) {
-        this.addAccount[id].status = status;
+        this.accounts[id].status = status;
     }
 }

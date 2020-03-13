@@ -10,7 +10,7 @@ import { AccountService } from '../accounts.service';
 export class AccountComponent implements OnInit {
   @Input() account: {name: string, status: string}
   @Input() id: number;
-  @Output() statusChanged = new EventEmitter<{id: number, newStatus: string}>();
+  // @Output() statusChanged = new EventEmitter<{id: number, newStatus: string}>();
 
   constructor(private loggingService: LoggingService, private accountService: AccountService) { }
 
